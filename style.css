@@ -1,0 +1,43 @@
+:root{
+    --buttonColor: #FFC727;
+    --textColor: #A3A3A3;
+    --backgorundColor: #FFFFFF;
+    --textJudul: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--backgorundColor);
+    margin: auto;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--textJudul);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+li a{
+    text-decoration: none;
+    color: var(--textJudul);
+    font-weight: bold;
+    font-size: 20PX;
+}
+ul li a:hover{
+    color: var(--buttonColor);
+}
+
