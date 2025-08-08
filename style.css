@@ -171,7 +171,65 @@ ul li a:hover{
     justify-content: space-between;
 }
 .services-right h1 img{
-    position: absolute;
+    position: relative;
     z-index: -1;
-    top: ;
+    top: 10px;
+    right: -40px;
+    
+}
+.services-right h1{
+    font-size: 30px;
+}
+.services-right p{
+    font-size: 20px;
+    color: var(--textColor);
+}
+.services-left button{
+    border: none;
+    background-color: var(--buttonColor);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.services-main{
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* styling crad services */
+.services-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+}
+.card-services{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-services h2{
+    position: relative;
+    top: 20px;
+    right: 40px;
+    justify-self: start;
+    margin: 40px;
+    font-size: 20px;
+}
+.card-services img{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+.card-services p{
+    font-size: 18px;
+    color: var(--textColor);
 }
