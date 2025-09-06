@@ -25,8 +25,8 @@
   <section class="hero">
     <!-- content right -->
     <div class="hero-text">
-      <h1>Best Solution for Your  Business problem</h1>
-      <p>We are passionate coder who will design and  develop best Solution for you</p>
+      <h1>Best Solution for Your Business problem</h1>
+      <p>We are passionate coder who will design and develop best Solution for you</p>
       <div class="container-btn">
         <button class="btnMore" id="btnMore">More Info</button>
         <button class="btnContact" id="btnContact">Contact Us</button>
@@ -40,7 +40,7 @@
     </div>
     <!-- content left end -->
   </section>
-  <section class="info-hero">
+  <section id="info-hero">
     <div class="info-left">
       <img src="images/about.png" alt="info img">
     </div>
@@ -76,15 +76,14 @@
     <div class="container-services">
       <div class="header-services">
         <div class="services-right">
-           <h1>
-            <img src="images/accent2.svg" alt="">
+          <h1>
             Our Services
           </h1>
-           <p>We have the best service to solve your problem</p>
+          <p>We have the best service to solve your problem</p>
         </div>
-       <div class="services-left">
-        <button>Contact Us</button>
-       </div>
+        <div class="services-left">
+          <button>Contact Us</button>
+        </div>
       </div>
       <div class="services-main">
         <div class="card-services">
@@ -92,7 +91,7 @@
           <h2>Web Development</h2>
           <p> Web application can be your best and easiest solution for your problem that can be access anywhare</p>
         </div>
-         <div class="card-services">
+        <div class="card-services">
           <img src="images/service2.png" alt="ui/ux design">
           <h2>UI/UX Design</h2>
           <p>
@@ -110,7 +109,69 @@
     </div>
   </section>
 
- <script src="data.js"></script>
+  <!-- form input and location map -->
+  <section id="form-parent">
+    <div class="header-form">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us now and get you problem solved</p>
+    </div>
+    <div class="form-location">
+      <form class="container-form" action="">
+        <h1>Tell us your problem</h1>
+        <div class="container-grup">
+          <div class="form-grup name">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+          </div>
+
+          <div class="form-grup subject">
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" placeholder="Your Subject">
+          </div>
+
+          <div class="form-grup email">
+            <label for="email">Email</label>
+            <input type="email" id="Email" placeholder="Your Email">
+          </div>
+
+          <div class="form-grup phone">
+            <label for="phoen-number">Phone Number</label>
+            <input type="text" id="Phone" placeholder="Your Phone Number">
+          </div>
+
+          <div class="form-grup massage">
+            <label for="massage">Message</label>
+            <input type="text" id="masage" placeholder="Your Message">
+          </div>
+        </div>
+
+        <button class="btn-submit">SUMBMIT</button>
+      </form>
+      <div class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.947664738732!2d106.96886697429959!3d-6.270613161384345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5017d3152b%3A0x898f42b2ee2990e4!2sCoding%20Studio%20%7C%20KodioKids%20Sekolah%20Koding%20%26%20AI%20%7C%20Cyber%20Security%2C%20Game%20Development%2C%20Data%20Analytics%2C%20Excel%2C%20%26%20Corporate%20Training!5e0!3m2!1sid!2sid!4v1755178126685!5m2!1sid!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container-footer">
+      <div class="left-footer">
+        <h2>Coder</h2>
+        <p>We are passionate coder who will design and develop best Solution for you</p>
+      </div>
+      <div class="right-footer">
+        <img src="images/Facebook.svg" alt="">
+        <img src="images/Instagram.svg" alt="">
+        <img src="images/Twitter.svg" alt="">
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
 </body>
 
 </html>
