@@ -12,8 +12,8 @@
 body{
     font-family: Arial, sans-serif;
     background-color: var(--backgorundColor);
-    margin: auto;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 .header{
     display: flex;
@@ -113,7 +113,7 @@ ul li a:hover{
 /* end styling hero */
 
 /* styling maain */
-.info-hero{
+#info-hero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,16 +178,26 @@ ul li a:hover{
 .header-services{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
 }
-.services-right h1 img{
-    position: relative;
-    z-index: -1;
-    top: 10px;
-    right: -40px;
+.services-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+}
+.services-right  img{
+    width: 60px;
+    height: auto;
+    margin: 10px;
     
 }
 .services-right h1{
-    font-size: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .services-right p{
     font-size: 20px;
@@ -226,6 +236,10 @@ ul li a:hover{
     align-items: center;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+.card-services:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 .card-services h2{
     position: relative;
     top: 20px;
@@ -244,4 +258,150 @@ ul li a:hover{
     font-size: 18px;
     color: var(--textColor);
     padding: 0 16px;
+}
+
+/* styling form location */
+#form-parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.header-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+.header-form h1{
+    font-size: 30px;
+    color: var(--textJudul);
+    margin: 10px 0;
+    padding: 0 16px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.header-form h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(images/accent1.svg);
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    top: -30px;
+}
+.header-form p{
+    color: var(--textColor);
+}
+
+.form-location{
+    display: flex;
+    margin: 40px;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.container-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--buttonColor);
+    padding: 16px;
+}
+.container-grup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name subject"
+                          "email phone"
+                          "massage massage";
+    margin: 16px;
+    
+}
+.name{
+    grid-area: name;
+}
+.subject{
+    grid-area: subject;
+}
+.email{
+    grid-area: email;
+}
+.phone{
+    grid-area: phone;
+}
+.massage{
+    grid-area: massage
+    ;
+}
+.form-grup{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+   
+}
+.form-grup input{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--textColor);
+    
+}
+.form-grup input:focus{
+    border-bottom: 2px solid var(--buttonColor);
+}
+.form-grup label{
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-submit{
+    border: none;
+    background-color: var(--buttonColor);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling position accsent */
+.services-right{
+    position: relative;
+}
+.services-right h1{
+  margin-bottom: 10px;
+}
+.services-right h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(images/accent2.svg);
+    position: absolute;
+    left: -40px;
+    top: -30px;
+    z-index: -1;
+   
+}
+/* end styling posisition accsent */
+
+/* styling footer */
+footer{
+    background: var(--buttonColor);
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.right-footer{
+    gap: 20px;
 }
